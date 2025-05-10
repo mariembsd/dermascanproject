@@ -1,0 +1,19 @@
+.user-management {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-management h4 {
+    margin-bottom: 20px;
+  }
+  
+  .user-management table {
+    margin-top: 10px;
+  }
+  
+  .user-management .btn {
+    margin-right: 5px;
+  }

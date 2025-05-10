@@ -1,0 +1,116 @@
+/* Color Palette */
+:root {
+  --beige: #f5f5dc;
+  --light-beige: #fafaf5;
+  --brown: #8B4513;
+  --light-brown: #a0522d;
+  --light-pink: #ffb6c1;
+  --green: #2e8b57;
+  --light-green: #3cb371;
+}
+
+/* General Styles */
+.services-container {
+  padding: 3rem 0;
+  background-color: var(--light-beige);
+  min-height: 100vh;
+}
+
+.services-header {
+  margin-bottom: 3rem;
+}
+
+.services-title {
+  color: var(--brown);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.services-subtitle {
+  color: var(--light-brown);
+  font-size: 1.2rem;
+}
+
+/* Service Cards */
+.service-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+  color: var(--green);
+}
+
+.service-card-title {
+  color: var(--brown);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.service-card-text {
+  color: var(--light-brown);
+}
+
+/* Additional Info Section */
+.additional-info {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin-top: 4rem;
+}
+
+.info-title {
+  color: var(--brown);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.info-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.info-list li {
+  padding: 0.5rem 0;
+  color: var(--light-brown);
+  font-size: 1.1rem;
+}
+
+.info-list i {
+  color: var(--green);
+}
+
+.info-image {
+  color: var(--light-pink);
+  opacity: 0.8;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .services-title {
+    font-size: 2rem;
+  }
+  
+  .services-subtitle {
+    font-size: 1rem;
+  }
+  
+  .info-image {
+    margin-top: 2rem;
+  }
+  
+  .additional-info {
+    padding: 1.5rem;
+  }
+}

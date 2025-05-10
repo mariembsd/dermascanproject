@@ -1,0 +1,349 @@
+/* AdminPage.css - Shared styles for all admin pages */
+
+.admin-page {
+    padding: 0;
+  }
+  
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .page-header h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--dark-color);
+    margin: 0;
+  }
+  
+  .page-header p {
+    color: #64748b;
+    margin: 0.5rem 0 0;
+  }
+  
+  .header-actions {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  /* Button styles */
+  .btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 0.9rem;
+    border: 1px solid transparent;
+  }
+  
+  .btn.primary {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .btn.primary:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .btn.danger {
+    background-color: #fee2e2;
+    color: #dc2626;
+    border-color: #fecaca;
+  }
+  
+  .btn.danger:hover {
+    background-color: #fecaca;
+  }
+  
+  /* Analytics Page Styles */
+  .analytics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .metric-card {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .metric-card h3 {
+    font-size: 1rem;
+    color: #64748b;
+    margin-bottom: 0.5rem;
+  }
+  
+  .metric-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .metric-change {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  
+  .metric-change.positive {
+    color: #10b981;
+  }
+  
+  .metric-change.negative {
+    color: #ef4444;
+  }
+  
+  .chart-container {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--box-shadow);
+    grid-column: 1 / -1;
+  }
+  
+  .chart-container h3 {
+    font-size: 1rem;
+    color: #64748b;
+    margin-bottom: 1rem;
+  }
+  
+  .chart-placeholder {
+    height: 300px;
+    background: #f8fafc;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+  }
+  
+  /* Reports Page Styles */
+  .reports-list {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .report-card {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .report-info h3 {
+    font-size: 1.1rem;
+    margin: 0 0 0.5rem;
+    color: var(--dark-color);
+  }
+  
+  .report-meta {
+    display: flex;
+    gap: 0.5rem;
+    color: #64748b;
+    font-size: 0.9rem;
+  }
+  
+  .report-actions {
+    display: flex;
+    gap: 0.75rem;
+  }
+  
+  /* Admin Tools Page Styles */
+  .tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+  }
+  
+  .tab {
+    padding: 0.75rem 1.5rem;
+    background: none;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: 500;
+    color: #64748b;
+    transition: var(--transition);
+  }
+  
+  .tab.active {
+    color: var(--primary-color);
+    background-color: var(--primary-light);
+  }
+  
+  .tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .tool-card {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .tool-card h3 {
+    font-size: 1.1rem;
+    margin: 0 0 0.5rem;
+    color: var(--dark-color);
+  }
+  
+  .tool-card p {
+    color: #64748b;
+    margin: 0 0 1rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Messages Page Styles */
+  .messages-list {
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+  }
+  
+  .message-item {
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid #f1f5f9;
+    display: grid;
+    grid-template-columns: 1fr 2fr auto;
+    gap: 1rem;
+    align-items: center;
+    cursor: pointer;
+    transition: var(--transition);
+    position: relative;
+  }
+  
+  .message-item:hover {
+    background-color: #f8fafc;
+  }
+  
+  .message-item.unread {
+    background-color: #f8fafc;
+  }
+  
+  .message-sender {
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .message-subject {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .message-date {
+    color: #64748b;
+    font-size: 0.85rem;
+    text-align: right;
+  }
+  
+  .unread-badge {
+    position: absolute;
+    left: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+  }
+  
+  /* Settings Page Styles */
+  .settings-form {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--dark-color);
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
+  }
+  
+  .form-group.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .form-group.checkbox label {
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+  
+  .form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #f1f5f9;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .report-card {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    
+    .report-actions {
+      width: 100%;
+      justify-content: flex-end;
+    }
+    
+    .message-item {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+    }
+    
+    .message-date {
+      text-align: left;
+    }
+  }

@@ -1,0 +1,607 @@
+/* Base Styles */
+.dermaconnect-about {
+  font-family: 'Poppins', sans-serif;
+  color: #5a3e36; /* Warm brown text */
+  line-height: 1.6;
+}
+
+/* Section Padding */
+section {
+  padding: 5rem 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-header h2 {
+  font-weight: 700;
+  color: #8b5e3c; /* Rich brown */
+  margin-bottom: 1rem;
+}
+
+.section-header .lead {
+  color: #6d4c41; /* Earthy brown */
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(135deg, #f8ede3, #e2c8ac);
+  padding: 6rem 0;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #5a3e36;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hero-content .lead {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #6d4c41;
+}
+
+.hero-image img {
+  box-shadow: 0 15px 30px rgba(90, 62, 54, 0.1);
+  border-radius: 12px !important;
+}
+
+/* Our Story Section */
+.our-story {
+  background-color: #fff9f5;
+}
+
+.our-story h2 {
+  margin-bottom: 1.5rem;
+  color: #8b5e3c;
+}
+
+.our-story p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.stats-overlay{
+  display: flex;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #f8ede3;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 120px;
+  margin: 0.5rem;
+}
+
+.stat-item h3 {
+  color: #8b5e3c;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  color: #6d4c41;
+}
+
+/* Our Team Section */
+.our-team {
+  background-color: #f5e6da;
+}
+
+.team-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(139, 94, 60, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff9f5;
+  text-align: center;
+  height: 100%;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(139, 94, 60, 0.15);
+}
+
+.team-icon {
+  font-size: 2.5rem;
+  color: #8b5e3c;
+  margin-bottom: 1.5rem;
+}
+
+.team-card .card-title {
+  color: #8b5e3c;
+  font-weight: 600;
+}
+
+.team-card .card-subtitle {
+  color: #a38b7e;
+  font-weight: 500;
+}
+
+/* Our Approach Section */
+.our-approach {
+  background-color: #fff9f5;
+}
+
+.approach-item {
+  text-align: center;
+  padding: 2rem;
+}
+
+.approach-icon {
+  font-size: 2.5rem;
+  color: #8b5e3c;
+  margin-bottom: 1.5rem;
+}
+
+.approach-item h3 {
+  color: #8b5e3c;
+  margin-bottom: 1rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+  background-color: #f5e6da;
+}
+
+.testimonial-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(139, 94, 60, 0.1);
+  background-color: #fff9f5;
+  padding: 2rem;
+  height: 100%;
+}
+
+.rating {
+  color: #ffc107;
+}
+
+.star {
+  margin-right: 0.25rem;
+}
+
+.star.filled {
+  color: #ffc107;
+}
+
+.star.half {
+  position: relative;
+}
+
+.star.half:after {
+  content: '\f005';
+  position: absolute;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+  color: #ffc107;
+}
+
+.testimonial-content {
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-author h5 {
+  color: #8b5e3c;
+  margin-bottom: 0.25rem;
+}
+
+.testimonial-author p {
+  color: #a38b7e;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+/* CTA Section */
+.about-cta {
+  background: linear-gradient(135deg, #8b5e3c, #6d4c41);
+  color: white;
+  text-align: center;
+}
+
+.about-cta h2 {
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.about-cta .lead {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #8b5e3c;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #6d4c41;
+  transform: translateY(-2px);
+}
+
+.btn-outline-light {
+  border: 2px solid white;
+  color: white;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: white;
+  color: #8b5e3c;
+}
+
+/* Button Pulse Animation */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4); }
+  70% { box-shadow: 0 0 0 15px rgba(255, 255, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+}
+
+.btn-pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  section {
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .stats-container {
+    flex-direction: column;
+  }
+  
+  .stat-item {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-content .lead {
+    font-size: 1.1rem;
+  }
+  
+  section {
+    padding: 3rem 0;
+  }
+}/* Base Styles */
+.dermaconnect-about {
+  font-family: 'Poppins', sans-serif;
+  color: #5a3e36; /* Warm brown text */
+  line-height: 1.6;
+}
+
+/* Section Padding */
+section {
+  padding: 5rem 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-header h2 {
+  font-weight: 700;
+  color: #8b5e3c; /* Rich brown */
+  margin-bottom: 1rem;
+}
+
+.section-header .lead {
+  color: #6d4c41; /* Earthy brown */
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(135deg, #f8ede3, #e2c8ac);
+  padding: 6rem 0;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #5a3e36;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hero-content .lead {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #6d4c41;
+}
+
+.hero-image img {
+  box-shadow: 0 15px 30px rgba(90, 62, 54, 0.1);
+  border-radius: 12px !important;
+}
+
+/* Our Story Section */
+.our-story {
+  background-color: #fff9f5;
+}
+
+.our-story h2 {
+  margin-bottom: 1.5rem;
+  color: #8b5e3c;
+}
+
+.our-story p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #f8ede3;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 120px;
+  margin: 0.5rem;
+}
+
+.stat-item h3 {
+  color: #8b5e3c;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  color: #6d4c41;
+}
+
+/* Our Team Section */
+.our-team {
+  background-color: #f5e6da;
+}
+
+.team-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(139, 94, 60, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff9f5;
+  text-align: center;
+  height: 100%;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(139, 94, 60, 0.15);
+}
+
+.team-icon {
+  font-size: 2.5rem;
+  color: #8b5e3c;
+  margin-bottom: 1.5rem;
+}
+
+.team-card .card-title {
+  color: #8b5e3c;
+  font-weight: 600;
+}
+
+.team-card .card-subtitle {
+  color: #a38b7e;
+  font-weight: 500;
+}
+
+/* Our Approach Section */
+.our-approach {
+  background-color: #fff9f5;
+}
+
+.approach-item {
+  text-align: center;
+  padding: 2rem;
+}
+
+.approach-icon {
+  font-size: 2.5rem;
+  color: #8b5e3c;
+  margin-bottom: 1.5rem;
+}
+
+.approach-item h3 {
+  color: #8b5e3c;
+  margin-bottom: 1rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+  background-color: #f5e6da;
+}
+
+.testimonial-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(139, 94, 60, 0.1);
+  background-color: #fff9f5;
+  padding: 2rem;
+  height: 100%;
+}
+
+.rating {
+  color: #ffc107;
+}
+
+.star {
+  margin-right: 0.25rem;
+}
+
+.star.filled {
+  color: #ffc107;
+}
+
+.star.half {
+  position: relative;
+}
+
+.star.half:after {
+  content: '\f005';
+  position: absolute;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+  color: #ffc107;
+}
+
+.testimonial-content {
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-author h5 {
+  color: #8b5e3c;
+  margin-bottom: 0.25rem;
+}
+
+.testimonial-author p {
+  color: #a38b7e;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+/* CTA Section */
+.about-cta {
+  background: linear-gradient(135deg, #8b5e3c, #6d4c41);
+  color: white;
+  text-align: center;
+}
+
+.about-cta h2 {
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.about-cta .lead {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #8b5e3c;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #6d4c41;
+  transform: translateY(-2px);
+}
+
+.btn-outline-light {
+  border: 2px solid white;
+  color: white;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: white;
+  color: #8b5e3c;
+}
+
+/* Button Pulse Animation */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4); }
+  70% { box-shadow: 0 0 0 15px rgba(255, 255, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  section {
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .stats-container {
+    flex-direction: column;
+  }
+  
+  .stat-item {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-content .lead {
+    font-size: 1.1rem;
+  }
+  
+  section {
+    padding: 3rem 0;
+  }
+}

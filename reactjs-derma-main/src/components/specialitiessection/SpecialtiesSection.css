@@ -1,0 +1,138 @@
+/* Specialties Section Styling */
+.specialties-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9; /* Light background color */
+    text-align: center;
+  }
+  
+  .specialties-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333; /* Dark text color */
+  }
+  
+  .specialties-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .specialty-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .specialty-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .icon-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #0066cc; /* Blue background for the circle */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .icon-circle .icon {
+    color: white;
+    font-size: 48px;
+  }
+  
+  .specialty-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .specialty-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .navigation-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .navigation-dots .dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navigation-dots .dot.active {
+    background-color: #0066cc; /* Blue color for active dot */
+  }
+  
+  .navigation-dots .dot:hover {
+    background-color: #004499; /* Darker blue on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .specialties-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+  
+    .specialties-section h2 {
+      font-size: 28px;
+    }
+  
+    .icon-circle {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .icon-circle .icon {
+      font-size: 36px;
+    }
+  
+    .specialty-card h3 {
+      font-size: 20px;
+    }
+  
+    .specialty-card p {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .specialties-grid {
+      grid-template-columns: 1fr; /* 1 column on mobile */
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .specialty-card {
+    animation: fadeIn 0.5s ease forwards;
+  }

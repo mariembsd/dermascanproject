@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --color-cream: #F5F0E6;
+  --color-beige: #E6D5C3;
+  --color-brown: #B09B71;
+  --color-dark-brown: #6B5B4D;
+  --color-accent: #D4A373;
+  --shadow-soft: 0 15px 30px rgba(107, 91, 77, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-cream);
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  /* display: grid; */
+  /* place-items: center; */
+  /* padding: 20px; */
+}
+
+.derma-portal {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.derma-portal__container {
+  background: white;
+  border-radius: 25px;
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px;
+  transform: translateY(0);
+  animation: float 6s ease-in-out infinite;
+}
+
+.derma-portal__header {
+  background: linear-gradient(135deg, var(--color-beige) 0%, var(--color-brown) 100%);
+  color: var(--color-dark-brown);
+  padding: 40px 30px;
+  text-align: center;
+  position: relative;
+}
+
+.derma-portal__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: var(--color-dark-brown);
+}
+
+.derma-portal__subtitle {
+  font-size: 1.4rem;
+  opacity: 0.9;
+  font-weight: 600;
+}
+
+.derma-portal__emoji {
+  position: absolute;
+  top: -25px;
+  right: 30px;
+  font-size: 3rem;
+  animation: bounce 2s infinite;
+}
+
+.derma-portal__buttons {
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.derma-portal__btn {
+  border: none;
+  padding: 22px;
+  border-radius: 15px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(176, 155, 113, 0.2);
+}
+
+.derma-portal__btn:active {
+  transform: scale(0.98);
+}
+
+.derma-portal__btn--patient {
+  background: var(--color-beige);
+  color: var(--color-dark-brown);
+}
+
+.derma-portal__btn--dermatologist {
+  background: var(--color-brown);
+  color: white;
+}
+
+.derma-portal__btn-icon {
+  font-size: 1.8rem;
+  transition: transform 0.3s ease;
+}
+
+.derma-portal__btn:hover .derma-portal__btn-icon {
+  transform: scale(1.2) rotate(10deg);
+}
+
+.derma-portal__btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(176, 155, 113, 0.3);
+}
+
+.derma-portal__footer {
+  padding: 20px;
+  text-align: center;
+  background-color: var(--color-cream);
+  color: var(--color-dark-brown);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.double-row {
+  grid-column: span 2; /* This will make it span two columns if you're using CSS Grid */
+}
+
+/* Or if you're using flexbox */
+.double-row textarea {
+  height: 120px; /* Adjust as needed */
+  min-height: 120px;
+}
+/* Add these to your Forms.css */
+.file-list {
+  margin-top: 10px;
+}
+
+.file-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: #ff4444;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0 5px;
+}
+
+.remove-btn:hover {
+  color: #cc0000;
+}

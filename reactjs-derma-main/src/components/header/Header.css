@@ -1,0 +1,117 @@
+/* Header Styling */
+.header-section {
+    background-image: url('../../assets/images/img-header.jpg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 150px 20px; /* Adjust padding as needed */
+    text-align: center; /* Center text horizontally */
+    position: relative;
+    display: flex;
+    justify-content: flex-end; /* Push content to the right */
+    align-items: center; /* Center content vertically */
+  }
+  
+  .header-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px; /* Limit the width of the content */
+    text-align: left; /* Align text to the left within the container */
+    margin-right: 5%; /* Adjust this value to move content to the right */
+  }
+  
+  .header-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .startbutton{
+    background-color: #B19470 !important;
+    border-color: #B19470;
+  }
+
+  .startbutton:hover{
+    border: 2px solid;
+    border-color: #B19470;
+    background-color: transparent !important;
+    color:#B19470;
+  }
+
+  .header-content p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .header-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .startbutton, .btn-secondary {
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .startbutton {
+    background-color: #B19470;
+    color: #000;
+  }
+  
+  .startbutton:hover {
+    background-color: #B19470;
+    transform: scale(1.05);
+  }
+  
+  .btn-secondary {
+    background-color: transparent;
+    border: 2px solid #B19470;
+    color: #B19470;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #B19470;
+    color: #000;
+    transform: scale(1.05);
+  }
+  
+  /* Overlay for better text readability */
+  .header-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header-content {
+      margin-right: 5%; /* Adjust for smaller screens */
+    }
+  
+    .header-content h1 {
+      font-size: 36px;
+    }
+  
+    .header-content p {
+      font-size: 18px;
+    }
+  
+    .header-buttons {
+      flex-direction: column;
+      align-items: flex-start; /* Align buttons to the left on mobile */
+    }
+  
+    .btn-primary, .btn-secondary {
+      width: auto; /* Adjust button width */
+      text-align: center;
+    }
+  }

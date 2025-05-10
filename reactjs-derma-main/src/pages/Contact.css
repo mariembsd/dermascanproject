@@ -1,0 +1,74 @@
+.contact-hero {
+    background-color: #fef6e4;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    color: #5c4033;
+    font-weight: 700;
+  }
+  
+.btn-contact{
+  background-color: #B19470 !important;
+}
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+    color: #6e5844;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .section-container {
+    max-width: 1140px;
+  }
+  
+  .contact-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(92, 64, 51, 0.1);
+  }
+  
+  .contact-icon {
+    font-size: 2.5rem;
+    color: #c5b358;
+  }
+  
+  .contact-form-section {
+    background-color: #f9f5f0;
+    padding: 60px 0;
+  }
+  
+  textarea.form-control {
+    resize: vertical;
+  }
+  
+  .white-space-pre-line {
+    white-space: pre-line;
+  }
+  
+  /* Animations */
+  .fade-in {
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  .slide-in {
+    animation: slideInRight 1s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideInRight {
+    from { opacity: 0; transform: translateX(40px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  

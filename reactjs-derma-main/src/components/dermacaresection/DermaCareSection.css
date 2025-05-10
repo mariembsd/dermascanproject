@@ -1,0 +1,64 @@
+.derma-care-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+    position: relative;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .derma-care-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-container {
+    padding-left: 40px;
+  }
+  
+  .subheading {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: #a0a0a0;
+  }
+  
+  .heading {
+    font-size: 32px;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .description {
+    font-size: 16px;
+    color: #666;
+    margin: 20px 0;
+  }
+  
+  .btn-custom3 {
+    background-color: #3e2215;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    width: 100%;
+    transition: 0.3s;
+  }
+  
+  .btn-custom3:hover {
+    background-color: #6c5434;
+    transform: scale(1.05);
+  }
+  

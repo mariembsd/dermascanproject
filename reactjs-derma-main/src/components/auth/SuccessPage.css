@@ -1,0 +1,84 @@
+.success-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(107, 91, 77, 0.1);
+    text-align: center;
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  .success-icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    animation: bounce 1s infinite alternate;
+  }
+  
+  .success-container h2 {
+    color: #6B5B4D;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .success-container p {
+    color: #6B5B4D;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+  
+  .success-container button {
+    background-color: #B09B71;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .success-container button:hover {
+    background-color: #8a7a5a;
+    transform: translateY(-2px);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounce {
+    from {
+      transform: translateY(0) scale(1);
+    }
+    to {
+      transform: translateY(-15px) scale(1.1);
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .success-container {
+      padding: 1.5rem;
+      margin: 1rem;
+    }
+    
+    .success-container h2 {
+      font-size: 1.5rem;
+    }
+    
+    .success-container p {
+      font-size: 1rem;
+    }
+  }

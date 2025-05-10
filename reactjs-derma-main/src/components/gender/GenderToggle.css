@@ -1,0 +1,54 @@
+.treatment-container {
+    text-align: center;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .subheading {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: gray;
+    text-transform: uppercase;
+  }
+  
+  .heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0 20px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .button-group button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button-group button.active {
+    background-color: black;
+    color: white;
+  }
+  
+  .button-group button:not(.active) {
+    background-color: #d4c4a5;
+    color: black;
+  }
+  
+  .image-container {
+    margin-top: 20px;
+  }
+  
+  .treatment-image {
+    width: 100%;
+    max-width: 800px;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
